@@ -71,6 +71,8 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 1000px;
+    margin: 20px auto;
     
 }
 
@@ -78,17 +80,34 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+.tea_month_text h2 {
+    margin-bottom: 20px;
 }
 
 .tea_month_images {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+    row-gap: 1em;
 }
 
 .tea_month_images img {
     height: 200px;
     width: 300px;
 }
+
+.tea_month_images figure {
+    text-align: center;
+}
+
+.tea_month_images figcaption {
+    margin-top: 10px;
+}
+
+
 
 /* Endpage */
 
