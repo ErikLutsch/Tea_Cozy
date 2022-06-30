@@ -1,28 +1,28 @@
 /* Houserules*/
-* {
+body {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
     background-color: black;
     opacity: 0.94;
-    padding: 0;
     margin: 0;
+    text-align: center;
 }
 
-h2 {
-    font-size: 26px;
+a {
+    color: seashell;
 }
 
-h4 {
-    font-size: 22px;
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
- 
+
 
 
 /* Header */
 nav {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 69px;
     border-bottom: 1px solid seashell;
@@ -34,88 +34,61 @@ nav {
 }
 
 ul {
-    display: flex;
-    justify-content: space-between;
+   
     width: 350px;
     margin-right: 10px;
 }
 
 li {
     display: inline-block;
-    /* text-align: center;
-    justify-content: center;
-    align-items: center; */
+    
     
 }
 
 /* Hero */
-#hero {
-    display: flex;
-    justify-content: center;
-}
 
-.hero_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#hero {
     height: 700px;
     width: 1200px;
     background-image: url("../Images/img-mission-background.jpg");
 }
 
-.hero_text {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+.hero-text {
    width: 100%;
-   padding: 10px 10px;
    margin: auto;
-   text-align: center;
 }
-
 
 
 /* Midpage */
 #month {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+   
     max-width: 1000px;
     margin: 20px auto;
     
 }
 
-.tea_month_text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.tea-month-text h2 {
     margin-bottom: 20px;
 }
 
-.tea_month_text h2 {
-    margin-bottom: 20px;
-}
-
-.tea_month_images {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+.tea-month-images {
+   
     row-gap: 1em;
 }
 
-.tea_month_images img {
+.tea-month-images img {
     height: 200px;
     width: 300px;
 }
 
-.tea_month_images figure {
-    text-align: center;
+.tea-month-images figure {
+    
 }
 
-.tea_month_images figcaption {
+.tea-month-images figcaption {
     margin-top: 10px;
+    font-weight: bold;
 }
 
 
@@ -125,25 +98,28 @@ li {
     background-image: url("../Images/img-locations-background.jpg");
     height: 500px;
     width: 1200px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-.location_boxes {
-    display: flex;
+    
+    margin: 0 auto;
     
 }
 
-.location_boxes article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#locations h2 {
+    background-color: transparent;
+    opacity: 0.95;
+}
+
+.location-boxes {
+    gap: 2%;
+}
+
+.location-boxes article {
+   
     height: 300px;
     width: 300px;
-    text-align: center;
+   
     
 }
+
 
 /* Footer */
