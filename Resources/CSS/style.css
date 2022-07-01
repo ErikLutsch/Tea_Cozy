@@ -103,7 +103,7 @@ li {
     background-image: url("../Images/img-locations-background.jpg");
     height: 500px;
     width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 #locations h2 {
@@ -115,9 +115,14 @@ li {
 }
 
 .location-boxes article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 300px;
     width: 300px;
     background-color: black;
+    margin: auto;
 }
 
 
