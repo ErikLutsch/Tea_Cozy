@@ -1,4 +1,8 @@
 /* Houserules*/
+html {
+    opacity: .94;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
@@ -13,6 +17,18 @@ a {
     color: seashell;
 }
 
+h2, h3, h4 {
+    margin: 0;
+    padding: 10px;
+}
+
+figure, figcaption, article {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -22,10 +38,16 @@ a {
 
 
 /* Header */
-nav {
-    align-items: center;
-    height: 69px;
+
+header {
     border-bottom: 1px solid seashell;
+    height: 69px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    align-items: center;
+
 }
 
 #logo {
@@ -33,16 +55,14 @@ nav {
     height: 50px;
 }
 
-ul {
-   
-    width: 350px;
-    margin-right: 10px;
+nav {
+    flex-grow: 1;
+    text-align: right;
 }
 
 li {
     display: inline-block;
-    
-    
+    padding: 0px 10px;
 }
 
 /* Hero */
@@ -50,75 +70,54 @@ li {
 #hero {
     height: 700px;
     width: 1200px;
+    margin: 0 auto;
     background-image: url("../Images/img-mission-background.jpg");
 }
 
 .hero-text {
    width: 100%;
    margin: auto;
+   background-color: black;
 }
 
 
 /* Midpage */
 #month {
-   
-    max-width: 1000px;
+    padding: 20px 0 20px 0;
+    width: 1000px;
     margin: 20px auto;
-    
-}
-
-
-.tea-month-text h2 {
-    margin-bottom: 20px;
-}
-
-.tea-month-images {
-   
-    row-gap: 1em;
 }
 
 .tea-month-images img {
     height: 200px;
     width: 300px;
-}
-
-.tea-month-images figure {
-    
+    padding: 10px 10px; 
 }
 
 .tea-month-images figcaption {
-    margin-top: 10px;
     font-weight: bold;
 }
-
-
 
 /* Endpage */
 #locations {
     background-image: url("../Images/img-locations-background.jpg");
     height: 500px;
     width: 1200px;
-    align-items: center;
-    
     margin: 0 auto;
-    
 }
 
 #locations h2 {
-    background-color: transparent;
     opacity: 0.95;
 }
 
-.location-boxes {
-    gap: 2%;
+.location-boxes .flex-container {
+    align-items: center;
 }
 
 .location-boxes article {
-   
     height: 300px;
     width: 300px;
-   
-    
+    background-color: black;
 }
 
 
