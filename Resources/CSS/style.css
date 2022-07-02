@@ -17,12 +17,16 @@ a {
     color: seashell;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     margin: 0;
     padding: 10px;
 }
 
-figure, figcaption, article {
+figure,
+figcaption,
+article {
     margin: 0;
     padding: 0;
 }
@@ -75,13 +79,13 @@ li {
 }
 
 .hero-text {
-   width: 100%;
-   margin: auto;
-   background-color: black;
+    width: 100%;
+    margin: auto;
+    background-color: black;
 }
 
 
-/* Midpage */
+/* Tea of the Month */
 #month {
     padding: 20px 0 40px 0;
     width: 1000px;
@@ -91,14 +95,14 @@ li {
 .tea-month-images img {
     height: 200px;
     width: 300px;
-    padding: 10px 10px; 
+    padding: 10px 10px;
 }
 
 .tea-month-images figcaption {
     font-weight: bold;
 }
 
-/* Endpage */
+/* Locations */
 #locations {
     background-image: url("../Images/img-locations-background.jpg");
     height: 500px;
